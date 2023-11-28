@@ -1,3 +1,7 @@
+## Task 1 Linux Script Command
+
+[viewed online here](https://github.com/lavanyamishra/Shop-web/tree/master/internsctl).
+
 # Shop-web
 
 
