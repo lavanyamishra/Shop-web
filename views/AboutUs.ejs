@@ -1,0 +1,70 @@
+<%- include('./common/header.ejs') %> <%- include('./common/title.ejs') %>
+        <div class="wrapper">
+            <%- include('./common/navbar.ejs') %>
+
+                <!-- Main code start -->
+                <div class="page-content-wrapper">
+                    <!-- start page content-->
+                    <div class="page-content">
+                        <!--start breadcrumb-->
+                        <div class="page-breadcrumb d-none d-sm-flex align-items-center mb-3">
+                            <div class="breadcrumb-title pe-3">About Us</div>
+                            <div class="ps-3">
+                                <nav aria-label="breadcrumb">
+                                    <ol class="breadcrumb mb-0 p-0 align-items-center">
+                                        <li class="breadcrumb-item">
+                                            <a href="javascript:;">
+                                                <ion-icon name="home-outline"></ion-icon>
+                                            </a>
+                                        </li>
+                                        <li class="breadcrumb-item active" aria-current="page">
+                                            eCommerce
+                                        </li>
+                                    </ol>
+                                </nav>
+                                <p></p>
+                            </div>
+
+
+                        </div>
+                        <main>
+                            <section class="about-section">
+                                <h1>About ShopFusion</h1>
+
+                                <p>Welcome to ShopFusion, your one-stop shop for products or
+                                    services. We are a passionate team dedicated to providing our customers with a
+                                    seamless and enjoyable shopping experience.</p>
+
+                                <p>Our story began with a simple mission: to make it easy for people to find and
+                                    purchase the things they love. We believe that everyone deserves access to
+                                    high-quality products at affordable prices, and that's what we strive to deliver.
+                                </p>
+
+                                <p>We are committed to:</p>
+
+                                <ul>
+                                    <li>Offering a wide variety of products to meet your needs</li>
+                                    <li>Providing competitive prices that fit your budget</li>
+                                    <li>Delivering exceptional customer service</li>
+                                    <li>Making shopping online a fun and rewarding experience</li>
+                                </ul>
+
+                                <p>We are more than just an e-commerce store; we are a community. We want to connect
+                                    with our customers and build lasting relationships. We value your feedback and are
+                                    always looking for ways to improve.</p>
+
+                                <p>Thank you for choosing ShopFusion. We hope you enjoy your
+                                    shopping experience!</p>
+                            </section>
+                        </main>
+                    </div>
+                    <div class="col-6">
+                        <a href="/dashboard" class="btn btn-primary px-4">Dashboard</a>
+                        <a href="/contact" class="btn btn-primary px-4">Contact</a>
+                    </div>
+                    <!-- end page content-->
+                </div>
+                <!-- Main code end -->
+                <%- include('./common/bottom.ejs') %>
+        </div>
+        <%- include('./common/footer.ejs') %>

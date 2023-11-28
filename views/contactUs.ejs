@@ -1,0 +1,145 @@
+<%- include('./common/header.ejs') %>
+
+  <%- include('./common/title.ejs') %>
+    <!--start wrapper-->
+    <div class="wrapper">
+      <!--start sidebar -->
+      <!--end sidebar -->
+
+      <!--start top header-->
+      <%- include('./common/navbar.ejs') %>
+        <!--end top header-->
+
+
+        <!-- start page content wrapper-->
+        <div class="page-content-wrapper">
+          <!-- start page content-->
+          <div class="page-content">
+
+            <!--start breadcrumb-->
+            <div class="page-breadcrumb d-none d-sm-flex align-items-center mb-3">
+              <div class="breadcrumb-title pe-3">Pofile</div>
+              <div class="ps-3">
+                <nav aria-label="breadcrumb">
+                  <ol class="breadcrumb mb-0 p-0 align-items-center">
+                    <li class="breadcrumb-item"><a href="javascript:;"><ion-icon name="home-outline"></ion-icon></a>
+                    </li>
+                    <li class="breadcrumb-item active" aria-current="page"> Profile</li>
+                  </ol>
+                </nav>
+              </div>
+
+            </div>
+            <!--end breadcrumb-->
+            <h5 class="mb-3">CONTACT US
+            </h5>
+            <div class="row">
+              <div class="col-lg-8 mx-auto">
+                <div class="card radius-10">
+                  <div class="card-body">
+                    <form action="/contact" method="post">
+
+
+                      <div class="mb-4 d-flex flex-column gap-3 align-items-center justify-content-center">
+                        <div class="user-change-photo shadow">
+                          <% if(user.profile!=="no" ){ %>
+                            <img src="<%=user.profile %>" alt="...">
+                            <% }else{ %>
+                              <img src="assets/images/avatars/06.png" alt="...">
+                              <% } %>
+                        </div>
+                        <!-- <input type="file" class="btn btn-outline-primary btn-sm radius-30 px-4"
+                          name="profile"><ion-icon name="profile"></ion-icon>Change Photo</input> -->
+                      </div>
+                      <h5 class="mb-0 mt-4">User Information</h5>
+                      <hr>
+                      <div class="row g-3">
+
+                        <div class="col-6">
+                          <label class="form-label">Name</label>
+                          <input type="text" class="form-control" name="name">
+                        </div>
+                        <!-- <div class="col-6">
+                       <label class="form-label">Last Name</label>
+                       <input type="text" class="form-control" value="">
+                   </div> -->
+
+                        <div class="col-6">
+                          <label class="form-label">Phone No</label>
+                          <input type="phone" class="form-control" name="phone">
+                        </div>
+                      </div>
+                      <div class="row g-3">
+
+                        <div class="col-6">
+                          <label class="form-label">Email</label>
+                          <input type="text" class="form-control" name="email" value="<%=user.name %>">
+                        </div>
+                        <!-- <div class="col-6">
+                       <label class="form-label">Last Name</label>
+                       <input type="text" class="form-control" value="">
+                   </div> -->
+
+                        <div class="col-6">
+                          <label class="form-label">Address</label>
+                          <input type="phone" class="form-control" name="address">
+                        </div>
+                      </div>
+
+
+                  </div>
+                  <div class="row g-3">
+
+
+
+                    <div class="col-6">
+                      <label class="form-label">Message</label>
+                      <textarea type="phone" class="form-control" name="message"></textarea>
+                    </div>
+                  </div>
+                  <div class="col-6">
+                    <a href="/dashboard" class="btn btn-primary px-4">Dashboard</a>
+                    <a href="/about" class="btn btn-primary px-4">About</a>
+                  </div>
+                </div>
+
+
+              </div>
+
+
+              <div class="text-start mt-3">
+                <button type="submit" class="btn btn-primary px-4">Save Changes</button>
+              </div>
+            </div>
+            </form>
+          </div>
+        </div>
+    </div><!--end row-->
+
+    </div>
+    <!-- end page content-->
+    </div>
+
+    <!--start overlay-->
+    <div class="overlay nav-toggle-icon"></div>
+    <!--end overlay-->
+
+    </div>
+    <!--end wrapper-->
+
+    <!-- JS Files-->
+    <script src="assets/js/jquery.min.js"></script>
+    <script src="assets/plugins/simplebar/js/simplebar.min.js"></script>
+    <script src="assets/plugins/metismenu/js/metisMenu.min.js"></script>
+    <script src="assets/js/bootstrap.bundle.min.js"></script>
+    <script type="module" src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.esm.js"></script>
+    <!--plugins-->
+    <script src="assets/plugins/perfect-scrollbar/js/perfect-scrollbar.js"></script>
+
+    <!-- Main JS-->
+    <script src="assets/js/main.js"></script>
+
+
+    </body>
+
+    </html>
